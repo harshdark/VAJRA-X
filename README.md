@@ -88,3 +88,50 @@ Use a domain you own or a deliberately vulnerable training application hosted in
 - v0.3: isolated digital-twin lab for supported applications
 - v0.4: safe adversary-behaviour simulations and telemetry comparison
 - v1.0: modular security validation platform with evidence-backed results
+
+
+ALTERNATIVE IF ABOVE CODE NOT RUN 
+
+## Setup (Windows)
+
+1. Install Python 3.10 or newer.
+2. Extract this project.
+3. Open CMD or PowerShell in the project folder.
+4. Create a virtual environment:
+
+```cmd
+py -m venv .venv
+```
+
+5. Activate the virtual environment (optional):
+
+**CMD:**
+```cmd
+.venv\Scripts\activate.bat
+```
+
+**PowerShell:**
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+If PowerShell blocks activation, you can skip activation and use the virtual environment's Python directly:
+
+```cmd
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m streamlit run app.py
+```
+
+6. Install dependencies:
+
+```cmd
+python -m pip install -r requirements.txt
+```
+
+7. Run the application:
+
+```cmd
+streamlit run app.py
+```
+
+The app opens in your browser, usually at http://localhost:8501.
